@@ -3,6 +3,10 @@
     "version": "0.0.2",
     "description": "Multisignature library for Sui blockchain",
     "main": "src/index.ts",
+    "files": [
+        "dist",
+        "src"
+    ],
     "license": "Apache-2.0",
     "scripts": {
         "dev": "pnpm build:tsup --watch",
