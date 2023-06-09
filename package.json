@@ -1,6 +1,6 @@
 {
     "name": "sui-multisig-js",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Multisignature library for Sui blockchain",
     "main": "src/index.ts",
     "files": [
@@ -16,7 +16,14 @@
         "lint": "eslint --ext .ts --max-warnings=0",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "source": "./src/index.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js"
+        }
+    },
     "engines": {
         "node": ">=16"
     },
