@@ -1,2 +1,2 @@
-export * from './multisignature/Multisig';
-export * from './utils/utils';
+export * from './multisignature';
+export * from './utils';
